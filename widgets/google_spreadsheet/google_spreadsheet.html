@@ -1,0 +1,11 @@
+<h4 class="title" data-bind="title"></h4>
+<h4 class="value" data-bind="value"></h4>
+
+<ul class="spreadsheet-list">
+  <li data-foreach-item="items">
+    <span class="label" data-bind="item.label"></span>
+    <span class="status" data-bind="item.status"></span>
+  </li>
+</ul>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>

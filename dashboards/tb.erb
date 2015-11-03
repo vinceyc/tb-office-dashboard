@@ -1,0 +1,125 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [110, 110]
+  Dashing.numColumns = 16
+  Dashing.numRows = 9
+  Dashing.cycleDashboards({timeInSeconds: 10, stagger: true});
+});
+</script>
+
+<% content_for :title do %>Thinkingbox Dashboard<% end %>
+<div data-id="reload" data-view="Reload" data-title="Reload" style="display: none"></div>
+<div class="gridster">
+    <div id="fssbackground" class="fsscontainer">
+        <div id="output" class="fsscontainer"></div>
+    </div>
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="5" data-sizey="1" class="top-widget">
+      <div data-view="Clock"></div>
+    </li>
+
+    <li data-row="1" data-col="5" data-sizex="8" data-sizey="1" class="top-widget">
+      <div data-view="TwelveHourClock"></div>
+    </li>
+
+    <li data-row="1" data-col="13" data-sizex="3" data-sizey="1" class="top-widget">
+      <div data-id="weather" data-view="Weather"></div>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="5" data-sizey="4">
+      <div data-id="progress_bars" data-view="ProgressBars" data-title="Project Bars"></div>
+    </li>
+
+    <li data-row="6" data-col="1" data-sizex="5" data-sizey="4">
+      <div data-id="ongoingpitches" data-view="GoogleSpreadsheet" data-title="Ongoing Pitches"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="11" data-sizey="7">
+      <div class="grid-cycle">
+        <ul>
+          <li data-row="1" data-col="1" data-sizex="8" data-sizey="1">
+            <div data-id="notice2" data-view="Text" data-title="" data-text="Random (╯°□°)╯︵ ┻━┻"></div>
+          </li>
+
+          <li data-row="2" data-col="1" data-sizex="4" data-sizey="3">
+            <div data-id="mashable" data-view="News" data-title="crunchgear" data-interval="30"></div>
+          </li>
+
+          <li data-row="2" data-col="5" data-sizex="4" data-sizey="3">
+            <div data-id="thenextweb" data-view="News" data-title="The Next Web" data-interval="30"></div>
+          </li>
+
+          <li data-row="5" data-col="1" data-sizex="3" data-sizey="3" class="">
+            <div data-id="bbc-tech" data-view="News" data-title="BBC Tech" data-interval="30"></div>
+          </li>
+
+          <li data-row="5" data-col="4" data-sizex="3" data-sizey="3" class="">
+            <div data-id="techcrunch" data-view="News" data-title="Techcrunch" data-interval="30"></div>
+          </li>
+
+          <li data-row="5" data-col="7" data-sizex="2" data-sizey="3" class="">
+            <div data-id="fastcompany" data-view="News" data-title="Fast Company" data-interval="30"></div>
+          </li>
+
+          <li data-row="1" data-col="9" data-sizex="3" data-sizey="1">
+            <div data-id="emojicon" data-view="Text" data-title="" data-text="ಠ_ಠ"></div>
+          </li>
+
+          <li data-row="2" data-col="9" data-sizex="3" data-sizey="3">
+            <div data-id="beerclock" data-view="Countdown" data-title="Until Beer O'Clock" data-min="0" data-max="100"></div>
+          </li>
+
+          <li data-row="5" data-col="9" data-sizex="3" data-sizey="3">
+              <div data-id="caption" data-image="" data-view="Caption"></div>
+          </li>
+
+        </ul>
+      </div>
+      <div class="grid-cycle">
+        <ul>
+          <li data-row="1" data-col="1" data-sizex="8" data-sizey="1" id="top-header">
+            <div data-id="notice1" data-view="Text" data-title="" data-text="Random (╯°□°)╯︵ ┻━┻"></div>
+          </li>
+
+          <li data-row="2" data-col="1" data-sizex="4" data-sizey="3">
+            <div data-id="fastcompany" data-view="News" data-title="Fast Company" data-interval="30"></div>
+          </li>
+
+          <li data-row="2" data-col="5" data-sizex="4" data-sizey="3">
+            <div data-id="techcrunch" data-view="News" data-title="Techcrunch" data-interval="30"></div>
+          </li>
+
+          <li data-row="5" data-col="1" data-sizex="3" data-sizey="3" class="">
+            <div data-id="thenextweb" data-view="News" data-title="The Next Web" data-interval="30"></div>
+          </li>
+
+          <li data-row="5" data-col="4" data-sizex="3" data-sizey="3" class="">
+            <div data-id="mashable" data-view="News" data-title="crunchgear" data-interval="30"></div>
+          </li>
+
+          <li data-row="5" data-col="7" data-sizex="2" data-sizey="3" class="">
+            <div data-id="bbc-tech" data-view="News" data-title="BBC Tech" data-interval="30"></div>
+          </li>
+
+          <li data-row="1" data-col="9" data-sizex="3" data-sizey="4" class='leaderboard-container'>
+            <div data-id="leaderboard" data-view="Leaderboard" data-title="MK X Leaderboard"></div>
+          </li>
+
+          <li data-row="5" data-col="9" data-sizex="3" data-sizey="3" class=''>
+            <div data-id="pic" data-image="" data-view="Image"></div>
+          </li>
+        </ul>
+
+      </div>
+
+
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="11" data-sizey="1">
+      <div data-id="quote" data-view="Quote"></div>
+    </li>
+
+  </ul>
+</div>

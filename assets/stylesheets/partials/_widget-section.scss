@@ -1,0 +1,81 @@
+// ----------------------------------------------------------------------------
+// TOP ROW
+// ----------------------------------------------------------------------------
+
+.top-widget {
+  .widget {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  h1, h2, h3, h4, h5, p {
+    margin: 0;
+    color: $white;
+  }
+}
+
+.widget-text {
+  h1, h2, h3, h4, h5, p {
+    margin: 0;
+  }
+}
+
+.top-widget .widget,
+.widget-countdown {
+    border: 0px solid #ddd;
+    box-shadow: none;
+}
+
+.widget-clock .day,
+.widget-weather .climacon,
+.widget-clock .monthyear,
+.widget-weather .condition {
+  font-style: normal;
+  height: 2em;
+  line-height: 2em;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: -webkit-baseline-middle;
+  position: relative;
+}
+.widget-clock .day,
+.widget-weather .climacon {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-left: 0.25em;
+}
+
+.widget-clock .monthyear,
+.widget-weather .condition {
+    font-family: 'Roboto';
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.widget-weather,
+.widget-clock {
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 19%;
+}
+
+// ----------------------------------------------------------------------------
+// With Padding
+// ----------------------------------------------------------------------------
+
+.widget-list,
+.widget-google-spreadsheet,
+.widget-progress-bars {
+  padding: 1em 1em 0em 1em;
+}
+
+.widget-progress-bars {
+
+  .rows-container {
+    margin-top: 4.5em;
+  }
+
+}

@@ -1,0 +1,35 @@
+// ----------------------------------------------------------------------------
+// General Widget
+// ----------------------------------------------------------------------------
+
+.gs_w {
+  width: 100%;
+  display: table;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.widget {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 0 1em;
+
+  -webkit-transition: all cubic-bezier(0.4,0.0,0.2,1) 0.2s;
+  transition: all cubic-bezier(0.4,0.0,0.2,1) 0.2s;
+  -webkit-box-shadow: 0 1px 8px rgba(40,0,30,0.18);
+  box-shadow: 0 1px 8px rgba(40,0,30,0.18);
+  border: 1.1px solid #e7e7e7;
+  background: #fff;
+
+  .more-info,
+  .updated-at {
+    display: none;
+  }
+
+  h4 {
+    position: absolute;
+    top: 1.5em;
+  }
+}

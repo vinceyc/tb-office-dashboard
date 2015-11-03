@@ -1,0 +1,82 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+
+// row-size is a magic number used for scaling. It will make things bigger
+// or smaller but always in proportion with each other. Feel free to change
+// this to reflect your personal needs.
+$row-size: 0.75em;
+
+// ----------------------------------------------------------------------------
+// Widget-project-completion styles
+// ----------------------------------------------------------------------------
+.widget.widget-progress-bars {
+  height: 100%;
+  width: 100%;
+  position:relative;
+  vertical-align: baseline;
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+  }
+
+  .title {
+    margin-bottom: 5px;
+  }
+
+  .rows-container {
+    height: 80%;
+    width: 100%;
+    font-size: $row-size;
+    text-align:center;
+  }
+
+  .row {
+    height:0%;
+    width:100%;
+    vertical-align: middle;
+    display:table;
+    transition-property: height;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    margin-bottom: 3%;
+    opacity: 0.75;
+  }
+
+  .row-content {
+    display:table-cell;
+    vertical-align: middle;
+  }
+
+  .project-name {
+    position: absolute;
+    padding-right: 1em;
+    text-align: left;
+    font-size: 1em;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    left: 7.5%;
+    line-height: 2.5;
+  }
+
+  .outer-progress-bar {
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+
+    .inner-progress-bar {
+      height: 100%;
+      color: transparent;
+    }
+  }
+
+  .zebra-stripe {
+  }
+
+}

@@ -1,0 +1,322 @@
+// ----------------------------------------------------------------------------
+// Widget Specific Styles
+// ----------------------------------------------------------------------------
+
+// ----------------------
+// Twitter
+// ----------------------
+.icon-twitter {
+    float: right;
+    position: absolute;
+    left: 5%;
+    height: 0%;
+    line-height: 1;
+    opacity: 0.75;
+    transform: translateX(-50%);
+    top: 38%;
+
+    &:before {
+      opacity: 0.5;
+    }
+}
+
+// ----------------------
+// Caption
+// ----------------------
+.widget-caption {
+  text-align: center;
+}
+
+// ----------------------
+// Quote
+// ----------------------
+.widget-quote {
+  padding: 0 1em;
+
+  .centered {
+    width: 95%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  p {
+    font-size: 1em;
+    margin: 0;
+
+    &:before {
+      content: '“';
+    }
+    &:after {
+      content: '”';
+    }
+  }
+}
+
+// ----------------------
+// Comments
+// ----------------------
+.widget-comments {
+  .comment-container {
+    width: 85%;
+    margin-left: 8%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+    p {
+      font-size: 1em;
+      font-weight: 300;
+      margin: 0;
+      .comment {
+        font-weight: 500;
+      }
+    }
+
+  }
+}
+
+// ----------------------
+// Number
+// ----------------------
+.widget-number {
+  text-align: center;
+}
+
+// ----------------------
+// Beer Clock Countdown
+// ----------------------
+.widget-countdown {
+  background: none;
+
+  .countdown-text {
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    border-radius: 50%;
+    margin: 8% 2%;
+    top: 0;
+    z-index: 1;
+    -webkit-box-shadow: inset 0 1px 8px rgba(25, 25, 25, 0.4);
+    box-shadow: inset 0 1px 8px rgba(25, 25, 25, 0.4);
+    background: #fff;
+  }
+  .centered {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  canvas {
+      transform: scale(1.75);
+    opacity: 0.9;
+    top: 6px;
+    position: relative;
+  }
+  input {
+    font-size: 0px !important;
+    opacity: 0;
+  }
+}
+
+
+.beerclock {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+
+  .percentage {
+    color: lighten(desaturate($text-color, 50) , 80);
+    background-color: $text-color;
+    display: none;
+  }
+}
+
+// ----------------------
+// RSS News
+// ----------------------
+.widget-news {
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2em;
+    bottom: 2em;
+    left: 0;
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(255,255,255,0)), color-stop(90%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 1%,rgba(255,255,255,1) 90%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 1%,rgba(255,255,255,1) 90%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 1%,rgba(255,255,255,1) 90%); /* IE10+ */
+  }
+
+  vertical-align: baseline !important;
+  padding: 1em;
+  overflow-y: hidden;
+  position: absolute;
+  height: 100%;
+
+  .heading {
+    font-size: 0.666em;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1em 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    height: 1em;
+    letter-spacing: 2px;
+    color: white;
+    background-color: $text-color;
+    &:before {
+      content: " ";
+      margin-left: 20px;
+    }
+  }
+
+  .title {
+    margin-bottom: 0.25em;
+  }
+
+  .headline-container {
+    display: none;
+  }
+
+  .description {
+    font-size: 0.8em;
+    line-height: 1.5;
+  }
+}
+
+// ----------------------
+// Ongoing Projects Chart
+// ----------------------
+.widget-google-spreadsheet {
+  padding: 0 1em;
+
+  .spreadsheet {
+      border: 1px solid lighten(desaturate($text-color, 15) , 0);
+  }
+  .spreadsheet-list {
+      display: inline-block;
+      float: left;
+      line-height: 1.5;
+      width: 100%;
+
+      li {
+          &:nth-child(even) {
+            background-color: desaturate(lighten($text-color, 65), 60);
+          }
+          &:nth-child(even) {
+          }
+          &:first-child span {
+            font-weight: 700;
+            font-size: 0.95em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+      }
+
+      span.label {
+          display: inline-block;
+          width: 66.6%;
+          padding: 0.25em 0.5em;
+      }
+  }
+}
+
+// ----------------------
+// Image
+// ----------------------
+.widget-image {
+
+}
+
+// ----------------------
+// Date
+// ----------------------
+.widget-clock {
+  h3 {
+    text-transform: none;
+  }
+}
+
+// ----------------------
+// Progress Bars
+// ----------------------
+.widget.widget-progress-bars {
+
+  .title {
+    color: $white;
+  }
+  .rows-container {
+    color: $text-color;
+    line-height: 2.5;
+  }
+  .row {
+    border: 0.25em solid $base-color-dark;
+    background-color: $base-color-light;
+    box-sizing: border-box;
+  }
+  .outer-progress-bar {
+    .inner-progress-bar {
+      background-color: $base-color-dark;
+    }
+  }
+  .zebra-stripe {
+    background-color: $base-color-light;
+  }
+}
+
+// ----------------------
+// Leaderboard
+// ----------------------
+.leaderboard-container {
+    background: url('https://psmedia.playstation.com/is/image/psmedia/mortal-kombat-x-logo-03-02jun14?$TwoColumn_Image$');
+    background-size: 90%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.leaderboard {
+    display: block;
+    padding: 5px 1em;
+    background: rgba(255,255,255,0.9);
+
+    li {
+      padding-left: 0.5em;
+    }
+    ul {
+      display: block;
+    }
+}
+
+.grid-cycle > ul li.leaders {
+  position: relative;
+  margin-bottom: 0.3em;
+  display: block;
+}
+
+// ----------------------
+// Time Clock
+// ----------------------
+.widget-twelve-hour-clock {
+    text-align: center;
+
+    h2, h4 {
+        display: inline-block;
+    }
+
+    h2 {
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        line-height: 1.5em;
+        margin-left: 0.5em;
+    }
+}

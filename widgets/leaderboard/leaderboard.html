@@ -1,0 +1,11 @@
+<h4 class="title" data-bind="title"></h4>
+<h4 class="value" data-bind="value"></h4>
+
+<ul>
+  <li data-foreach-item="items" class="leaders">
+    <span class="score" data-bind="item[0]"></span> -
+    <span class="label" data-bind="item[1]"></span>
+  </li>
+</ul>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>

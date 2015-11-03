@@ -1,0 +1,15 @@
+/*
+  //=require_directory .
+  //=require_tree ../../widgets
+*/
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+
+@import 'partials/variables';
+@import 'partials/general';
+@import 'partials/widget-grid';
+@import 'partials/widget-general';
+@import 'partials/widget-section';
+@import 'partials/widget-specific';
+@import 'partials/fss';

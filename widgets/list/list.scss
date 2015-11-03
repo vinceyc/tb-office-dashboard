@@ -1,0 +1,55 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------
+// Widget-list styles
+// ----------------------------------------------------------------------------
+.widget-list {
+
+  text-align: left;
+
+  vertical-align: top;
+
+  .title {
+  }
+
+  ol, ul {
+    margin: 0 15px;
+    text-align: left;
+  }
+
+  ol {
+    list-style-position: inside;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  input[type="checkbox"] {
+    height: 2em;
+    width: 2em;
+  }
+
+  .list-nostyle {
+    list-style: none;
+  }
+
+  .label {
+  }
+
+  .value {
+    float: right;
+    margin-left: 12px;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0);
+    display: none;
+  }
+
+  .more-info {
+  }
+
+}

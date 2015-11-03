@@ -1,0 +1,41 @@
+
+// ----------------------------------------------------------------------------
+// Grid Styles
+// ----------------------------------------------------------------------------
+
+.gridster {
+  margin: 0 auto;
+}
+.list-nostyle {
+  list-style: none;
+}
+.gridster ul {
+  list-style: none;
+  -webkit-transform: scale(0.996);
+  transform: scale(0.996);
+  top: -4px;
+}
+.grid-cycle {
+  box-sizing: border-box;
+}
+.grid-cycle > ul {
+  display: table;
+  float: left;
+
+  li {
+    display: table;
+    vertical-align: middle;
+    position: absolute;
+
+    .widget {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+.grid-cycle {
+  height: 100% !important;
+  width: 100% !important;
+  top: -5px;
+  left: -5px;
+}

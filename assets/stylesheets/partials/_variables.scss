@@ -1,0 +1,39 @@
+$text-color: hsl(309, 86, 22);
+$text-color: hsl(309, 40, 22);
+// $text-color: #043a3a;
+// $text-color: #670858;
+// $text-color: #5a1850;
+// $text-color: #652a5b;
+$text-color: #0C5F95;
+// dashboard color 043a3a teal
+// dashboard color 400b38 purple
+$white: #ffffff;
+
+$background-color: $white;
+$background-warning-color-1: $white;
+$background-warning-color-2: $white;
+$text-warning-color: $text-color;
+
+$background-danger-color-1: $white;
+$background-danger-color-2: $white;
+$text-danger-color: $text-color;
+
+$base-color-dark: lighten(desaturate($text-color, 0) , 0);
+$base-color-light: lighten(desaturate($text-color, 0), 10);
+$base-color-lighter: lighten(desaturate($text-color, 0), 20);
+
+@-webkit-keyframes status-warning-background {
+  0%   { background-color: $background-warning-color-1; }
+  50%  { background-color: $background-warning-color-2; }
+  100% { background-color: $background-warning-color-1; }
+}
+@-webkit-keyframes status-danger-background {
+  0%   { background-color: $background-danger-color-1; }
+  50%  { background-color: $background-danger-color-2; }
+  100% { background-color: $background-danger-color-1; }
+}
+@mixin animation($animation-name, $duration, $function, $animation-iteration-count:""){
+  -webkit-animation:  $animation-name $duration $function #{$animation-iteration-count};
+  -moz-animation:     $animation-name $duration $function #{$animation-iteration-count};
+  -ms-animation:      $animation-name $duration $function #{$animation-iteration-count};
+}
